@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+       Student Enrollment Form 
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Festive&family=Open+Sans+Condensed:wght@300&family=Pacifico&family=Quintessential&family=Redressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="enrollmentstyle.css">
+</head>
+<h1 class="title"> Student Registration Form</h1>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*:</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    
+                    <div>
+                        <label>City:</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div>
+                        <label>Mobile No:</label>
+                        <input type="text" name="mobile" id="mobile">
+                    </div>
+                    <div>
+                        <label>Email Id:</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Gender:</label>
+                        <input type="text" name="gender" id="gender">
+                    </div>
+                    <div>
+                        <label>Skill:</label>
+                        <input type="text" name="course" id="course">
+                    </div>
+
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="REGISTER">
+                    </div>
+
+                </form>
+            </td>
+            <td>
+                <table class="list" id="studentList">
+                    <thead>
+                        <h2>Student Details</h2>
+                        <tr>
+                            <th>Full Name </th>
+                            <th>City </th>
+                            <th>Mobile No </th>
+                            <th>Email Id </th>
+                            <th>Gender </th>
+                            <th>Skill </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="enrollment.js"></script>
+</body>
+
+</html>
